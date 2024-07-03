@@ -27,9 +27,7 @@ export class PoetsComponent {
   displayedColumns: string[] = ['id', 'name'];
   poets: Poet[] = [];
 
-  constructor(private poetService: PoetsService) {}
-
-  ngOnInit() {
+  constructor(private poetService: PoetsService) {
     this.initializeTable();
   }
 
